@@ -7,6 +7,7 @@
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PREBUILT_PATH := device/oplus/RMX3461/prebuilts
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -51,6 +52,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
+PRODUCT_COPY_FILES += \
+    $(PREBUILT_PATH)/dtb.img:dtb.img \
+    $(PREBUILT_PATH)/dtbo.img:dtbo.img \
+    $(PREBUILT_PATH)/kernel:kernel.img
+    
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oplus/sm8350-common/common.mk)
 
