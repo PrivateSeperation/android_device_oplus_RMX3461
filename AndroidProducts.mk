@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX3461.mk
+    $(LOCAL_DIR)/superior_RMX3461.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_RMX3461-user \
-    aosp_RMX3461-userdebug \
-    aosp_RMX3461-eng
+    superior_RMX3461-user \
+    superior_RMX3461-userdebug \
+    superior_RMX3461-eng
